@@ -1,8 +1,7 @@
 import axios from 'axios';
 
-const client = axios.create({
-  baseURL: import.meta.env.VITE_API_BASE_URL,
-  headers: { 'Content-Type': 'application/json' },
+const api = axios.create({
+  baseURL: "https://api.escuelajs.co/api/v1",
 });
 
 client.interceptors.response.use(
